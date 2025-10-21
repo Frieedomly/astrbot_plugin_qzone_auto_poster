@@ -1,4 +1,4 @@
-# Timestamptollm
+# qzone_auto_poster
 
 AstrBot 插件
 这是一个可以让llm自主发送qq空间说说的插件，需要手动获得qq空间的cookie，详情请见readme或github项目下说明。
