@@ -1,13 +1,13 @@
-﻿{
+{
   "qq": {
     "description": "QQ号",
     "type": "string",
-    "hint": "2230297490"
+    "hint": "bot的qq号"
   },
   "cookie": {
     "description": "QQ空间Cookie",
     "type": "text",
-    "hint": "pgv_pvid=3434554750; _qpsvr_localtk=0.37406431506389903; uin=o2230297490; skey=@EVfTt0rSD; RK=Kc+hil66ms; ptcz=0a87dc4e254fd5a2dde539406d9bbcb1c88087cd2346aae264aa40c2f9e36946; p_uin=o2230297490; pt4_token=hrLWp4rYxputP5Tl1-6FE5sYH4DmijJunHYTVbgaxPI_; p_skey=k9djIGgBSQxRnkFhUJYk9n4vDlOxIKjVTPIdpep47-Q_; Loading=Yes; media_p_uin=2230297490; pgv_info=ssid=s8394346072; __Q_w_s__QZN_TodoMsgCnt=1; media_p_skey=UmtqZQ3cZfHH8-g61IsUxZyR2U9ME1oWKRQRwbm0ljRrLY0-D9eDJGpR7p9DOK3EYrmJr2QdxVDGcGzIUXzebw",
+    "hint": "获得方法请见readme或github下使用方法，一般情况下，如过期需重新获取。",
     "obvious_hint": true
   }
 }

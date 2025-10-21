@@ -1,5 +1,5 @@
 name: qzone_auto_poster # 这是你的插件的唯一识别名。
-desc: 这是一个让llm能够主动发qq空间的插件 # 插件简短描述
+desc: 这是一个可以让llm自主发送qq空间说说的插件，需要手动获得qq空间的cookie，详情请见readme或github项目下说明。 # 插件简短描述
 version: v0.1 # 插件版本号。格式：v1.1.1 或者 v1.1
 author: Frieedomly # 作者
 repo: hhttps://github.com/Frieedomly/astrbot_plugin_qzone_auto_poster # 插件的仓库地址
