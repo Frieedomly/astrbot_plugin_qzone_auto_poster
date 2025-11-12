@@ -106,9 +106,6 @@ class QzoneAutoPlugin(Star):
                         logger.error(f"QQ空间说说发送失败: {error_msg}")
                         return {"success": False, "error": error_msg}
                     
-            async with session.post(url, params=params, data=data, headers=headers) as resp:
-                text = await resp.text()
-            logger.info(f"QQ空间原始响应: {text[:200]}")  # 先打印前200字符看看
         except Exception as e:
             logger.error(f"发送QQ空间说说异常: {str(e)}")
             return {"success": False, "error": str(e)}
