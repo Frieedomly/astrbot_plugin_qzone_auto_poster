@@ -37,7 +37,7 @@ class QzoneAutoPlugin(Star):
         '''
         result = await self.send_to_qzone(content)
         if result.get("success"):
-            yield event.plain_result(f"QQ空间说说发送成功（）")
+            yield event.plain_result(f"")
         else:
             yield event.plain_result(f"QQ空间说说发送失败（）错误: {result.get('error')}")
     
@@ -46,7 +46,7 @@ class QzoneAutoPlugin(Star):
         '''手动发送一条QQ空间说说'''
         result = await self.send_to_qzone(content)
         if result.get("success"):
-            yield event.plain_result("QQ空间说说发送成功（）")
+            yield event.plain_result("")
         else:
             yield event.plain_result(f"发送失败（）{result.get('error')}")
     
@@ -105,6 +105,10 @@ class QzoneAutoPlugin(Star):
                         error_msg = result.get("message", "未知错误")
                         logger.error(f"QQ空间说说发送失败: {error_msg}")
                         return {"success": False, "error": error_msg}
+                    
+            async with session.post(url, params=params, data=data, headers=headers) as resp:
+                text = await resp.text()
+            logger.info(f"QQ空间原始响应: {text[:200]}")  # 先打印前200字符看看
         except Exception as e:
             logger.error(f"发送QQ空间说说异常: {str(e)}")
             return {"success": False, "error": str(e)}
